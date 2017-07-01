@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome Aboard !"
+        android:id="@+id/welcometxt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textColor="#f21b13"
+        android:textSize="45dp"
+        android:layout_weight="0.10" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nametxt"
+        android:layout_gravity="center_horizontal"
+        android:hint="Please tell us your name..."
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.15" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a symbol (X or O)"
+        android:id="@+id/choosetxt"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.18"
+        android:layout_marginTop="40dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:paddingTop="20dp" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.24"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/xrb"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:id="@+id/orb"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Continue >"
+        android:id="@+id/continuebtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_weight="0.03" />
+</LinearLayout>
